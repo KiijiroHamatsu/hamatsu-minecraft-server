@@ -1,0 +1,9 @@
+@font-face {
+    font-family: qs;
+    src: url(font.ttf);
+}
+p.cs{
+    font-family: qs;
+    font-size: 100px;
+    text-align: center;
+}

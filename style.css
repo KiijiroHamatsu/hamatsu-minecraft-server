@@ -1,0 +1,75 @@
+@font-face {
+    font-family: qs;
+    src: url(font.ttf);
+}
+body{
+    background-color: black;
+    background-image: url("background\ web-fotor-20240611143355.png");
+    background-size: cover;
+    /* overflow: hidden; */
+}
+/* button{
+
+    background-color: wheat;
+    color: lightblue;
+    border: solid;
+    border-radius: 10px;
+    height: 10px;
+    width: 50px;
+}
+button:hover{
+    transition-duration: 0.25s;
+    background-color: white;
+    border-radius: 10px;
+    height: 800px;
+} */
+div{
+    text-align: center;
+}
+button{
+    transition-duration: 0.25s;
+    text-align: center;
+    color:lightcoral;
+    border: solid;
+    font-size: 50px;
+    font-family: qs;
+    border-color: whitesmoke;
+    border-radius: 100px;
+    background-color: transparent;
+    width: 500px;
+}
+button:hover{
+    transition-duration: 0.25s;
+    color:lightblue;
+    background-color: whitesmoke;
+}
+p{
+    color:white;
+    font-family: qs;
+    font-size: 100px;
+    text-align: center;
+}
+p.sc{
+    font-size: 10px;
+    color:transparent
+}
+a{
+    text-decoration: none;
+    color:lightcoral;
+
+}
+a:hover{
+    /* color: lightblue; */
+    transition-duration: 0.25s;
+}
+img {
+    transition-duration: 0.25s;
+    width: 10%;
+    height: auto;
+}
+
+/* img:hover{
+    transition-duration: 0.25s;
+    width: 50%;
+    height: auto;
+} */

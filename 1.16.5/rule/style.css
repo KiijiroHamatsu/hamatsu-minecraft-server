@@ -1,0 +1,23 @@
+@font-face {
+    font-family: qs;
+    src: url(font.ttf);
+}
+body{
+    font-family: qs;
+}
+.rule{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    padding-left: 0px;
+    color: white;
+}
+/* .rule p{
+    padding: 0px 10px;
+} */
+/* .rule p.prule{ */
+.rule p{
+    font-size: 20px;
+    padding: 0px 0px;
+    text-align: center;
+}

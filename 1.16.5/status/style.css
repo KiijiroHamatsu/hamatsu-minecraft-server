@@ -1,0 +1,8 @@
+@font-face {
+    font-family: qs;
+    src: url(font.ttf);
+}
+p{
+    font-family: qs;
+    font-size: 100px;
+}
