@@ -34,11 +34,11 @@ body{
 .sever_preview img {
     width: 1000px;
     border: 1px solid white;
-    transition-duration: 0.25s;
+    transition-duration: 0.125s;
 }
 .sever_preview img:hover{
     border: 10px solid white;
-    transition-duration: 0.25s;
+    transition-duration: 0.125s;
     border-radius: 5px;
 }
 .sever_preview p.main_preview{
