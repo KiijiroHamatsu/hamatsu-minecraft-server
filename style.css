@@ -6,6 +6,7 @@ body{
     background-color: black;
     background-image: url("background-web.png");
     background-size: cover;
+    font-family: qs;
     /* overflow: hidden; */
 }
 /* button{
@@ -53,11 +54,15 @@ p.sc{
     font-size: 10px;
     color:transparent
 }
-a{
+a.idk{
+    text-align: center;
+    padding: 10px 180px;
+    border: 1px solid transparent;
+    border-radius: 100px;
     text-decoration: none;
     color:lightcoral;
-
 }
+
 a:hover{
     /* color: lightblue; */
     transition-duration: 0.25s;
@@ -73,3 +78,12 @@ img {
     width: 50%;
     height: auto;
 } */
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 10px;
+    border: 1px groove;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}

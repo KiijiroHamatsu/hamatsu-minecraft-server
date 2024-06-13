@@ -2,8 +2,23 @@
     font-family: qs;
     src: url(font.ttf);
 }
-p.cs{
+body{
     font-family: qs;
+}
+p.cs{
     font-size: 100px;
     text-align: center;
+    border: 10px black;
+    border-style:double;
+    transition-duration: 0.5s;
+    padding: 10px 10px;
+    border-radius: 0px;
+}
+p:hover{
+    /* background-color: black; */
+    padding: 10px 10px;
+    border: 10px black;
+    border-style:double;
+    border-radius: 100px;
+    transition-duration: 0.5s;
 }

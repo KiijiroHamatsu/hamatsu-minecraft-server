@@ -1,0 +1,88 @@
+
+function choose_lenght(){
+    var len = prompt("Lenght?")
+    if(len == ""){
+        len = 4;
+    }
+    random_(len)
+    lenght_of_random_text = len
+    // return len;
+}
+function random_color(){
+    let r = -1
+    let g = -1
+    let b = -1
+    let r_or_g_or_b = Math.floor((Math.random()*3)+1)
+    if(r_or_g_or_b == 1){
+         r = (Math.floor((Math.random()*4)+245))
+        r = String(r)
+        g = "255"
+        b = "255"
+    }
+    if(r_or_g_or_b == 2){
+        g = (Math.floor((Math.random()*4)+245))
+        g = String(g)
+        r = "255"
+        b = "255"
+    }
+    if(r_or_g_or_b == 3){
+        b = (Math.floor((Math.random()*4)+245))
+        b = String(b)
+        g = "255"
+        r = "255"
+    }
+    rgb = "rgb("+r+","+g+","+b+")";
+    return rgb;
+}
+lenght_of_random_text = 4
+function random_(lenght_of_random_text){
+    var a = document.getElementById("random_")
+    var b = ""
+    for(var i = 0; i < lenght_of_random_text; i++){
+        let x = Math.floor((Math.random() * 26) + 65);
+        // alert(x)
+        b += String.fromCharCode(x) + " ";
+    }
+    // alert(b)
+    a.innerHTML = b;
+    y = random_color()
+    console.log(typeof(y))
+    // y = "rgb(0,0,0)"
+    a.style.color = y;
+    answer = b;
+    return b;
+}
+var answer = random_(lenght_of_random_text)
+// alert(answer)
+function summit(){
+    var a = confirm("Are you sure?")
+    if(a){
+        var b = prompt("Type Answer Here (Make sure you turn on Capslock).")
+        var c = ""
+        for(var i = 0; i < answer.length; i++){
+            if(answer[i] != " "){
+                c += answer[i];
+            }
+        }
+        // alert(c)
+        if(c==b){
+            alert("YOU WINN!😊")
+            location.reload();
+        }
+        else{
+            alert("Wrong😁.\nAnswer: " + c +"\nYou Lose 😭.")
+            location.reload();
+        }
+    }
+}
+function cheated(){
+    // alert("You cheated! 😠")
+    // location.reload()
+}
+function reload_(){
+    // lenght_of_random_text = choose_lenght()
+    var a = confirm("Are you sure? !!Reload!!")
+    if(a){
+        random_(lenght_of_random_text)
+    }
+}
