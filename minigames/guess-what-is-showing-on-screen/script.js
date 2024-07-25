@@ -1,4 +1,3 @@
-
 function choose_lenght(){
     var len = prompt("Lenght?")
     if(len == ""){
@@ -56,6 +55,7 @@ var answer = random_(lenght_of_random_text)
 // alert(answer)
 function submit(){
     var a = confirm("Are you sure?")
+    // var a = true
     if(a){
         var b = document.getElementById("answer").value.toUpperCase()
         var c = ""
@@ -69,12 +69,22 @@ function submit(){
             alert("YOU WINN!😊\nAnswer: " + c + "\nYour Answer: " + b)
             // location.reload();
             document.getElementById("answer").value = ""
+            var rop = document.getElementById("score")
+            var top = parseInt(rop.innerHTML)
+            console.log(top)
+            top += parseInt(lenght_of_random_text)
+            console.log(top)
+            rop.innerHTML = top
             reload_()
         }
         else{
             alert("Wrong😁.\nAnswer: " + c +"\nYou Lose 😭.\nYour answer: " + b)
             // location.reload();
             document.getElementById("answer").value = ""
+            var rop = document.getElementById("score")
+            var top = parseInt(rop.innerHTML)
+            top -= parseInt(lenght_of_random_text)
+            rop.innerHTML = top
             reload_()
         }
     }

@@ -19,6 +19,7 @@ body{
 p{
     font-size: 30px;
     text-align: center;
+    padding: 0px 0px;
 }
 button{
     border-radius: 20px;
@@ -46,4 +47,14 @@ input{
 input:hover{
     border-radius: 50px;
     transition-duration: 0.5s;
+}
+
+.score_bar{
+    border: 10px red solid;
+
+}
+img{
+    background-color: gold;
+    height: 30px;
+    width: auto;
 }

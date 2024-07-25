@@ -8,9 +8,12 @@
     <link rel="icon" type="image/x-icon" href="server icon large.png">
 </head>
 <body>
+    <label id="score_bar">Score: <a id="score">0</a><label id="rank"> 🥇</label></label>
+    <img src="rank2.png" id="rank">
     <p>See under this text and guess that text</p>
     <p class="cannot-select"id="random_" onclick="cheated()"></p>
-    <p>
+    <p id="ingame">
+        <!-- <label>Score: <a id="score">0</a></label> -->
         <label for="fname">Answer:</label><br><br><input type="text" id="answer"><br><br>
         <button onclick="submit()"><p>Submit Answer ✔. </p></button>
         <button onclick="choose_lenght()"><p>Change lenght of random text</p></button>

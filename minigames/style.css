@@ -4,12 +4,13 @@
 }
 body{
     font-family: qs;
+    font-size: 3.2vw;
 }
 
 a{
     text-decoration: none;
     padding: 10px 10px;
-    font-size: 25px;
+    /* font-size: 25px; */
     color: lightcoral;
     background-color: whitesmoke;
     border: 2px solid lightcoral;
@@ -23,12 +24,12 @@ a:hover{
     transition-duration: 0.25s;
 }
 p.idk{
-    font-size: 50px;
+    /* font-size: 50px; */
     border-bottom: 10px solid black;
     text-align: center;
 }
 p{
-    font-size: 20px;
+    /* font-size: 20px; */
     padding: 0px 20px;
 }
 .inv{
